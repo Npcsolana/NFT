@@ -1,0 +1,79 @@
+{
+  "tokenStandard": "nft",
+  "number": 6969,
+  "symbol": "",
+  "sellerFeeBasisPoints": 333,
+  "isMutable": true,
+  "isSequential": false,
+  "ruleSet": null,
+  "creators": [
+    {
+      "address": "CKA86u2L12kNE1JQaXC3v7eQz3wZKwBQXVwhDEaDBnTp",
+      "share": 80
+    },
+    {
+      "address": "6UdB76fwgwBDijvh1Astu2xkzDdW95QE7sXP1SXQSH8C",
+      "share": 20
+    }
+  ],
+  "uploadMethod": "bundlr",
+  "awsS3Bucket": null,
+  "awsConfig": null,
+  "nftStorageAuthToken": null,
+  "shdwStorageAccount": null,
+  "pinataConfig": null,
+  "hiddenSettings": null,
+  "guards": {
+    "default": {},
+    "groups": [
+      {
+        "label": "privat",
+        "guards": {
+          "solPayment": {
+            "value": 0.69,
+            "destination": "EkrZQWQtA4p9uPDsNzsjKwwEoJwESiYmj6F3eiNFJfok"
+          },
+          "startDate": {
+            "date": "2024-12-09T18:00:00Z"
+          },
+          "endDate": {
+            "date": "2024-12-10T20:00:00Z"
+          },
+          "mintLimit": {
+            "id": 1,
+            "limit": 10
+          },
+          "allowList": {
+            "merkleRoot": "3dc1e2288b1e42d780e700d4f4b86675c0be3340ff9e4a67aea6e2fb9d580d75"
+          },
+          "redeemedAmount": {
+            "maximum": 710
+          }
+        }
+      },
+      {
+        "label": "public",
+        "guards": {
+          "solPayment": {
+            "value": 1.169,
+            "destination": "EkrZQWQtA4p9uPDsNzsjKwwEoJwESiYmj6F3eiNFJfok"
+          },
+          "startDate": {
+            "date": "2024-12-10T20:00:00Z"
+          },
+          "redeemedAmount": {
+            "maximum": 6910
+          }
+        }
+      },
+      {
+        "label": "team",
+        "guards": {
+          "thirdPartySigner": {
+            "signerKey": "8VMvtHPtnJn2wxMJoaV7JD2BqeLyxpf39nPfpDyVVwPd"
+          }
+        }
+      }
+    ]
+  }
+}
